@@ -1,12 +1,14 @@
 import java.util.Scanner;
 
+// Time complexity O(sqrt(n)
+
 public class JumpSearch
 {
 	public static int jumpSearch(int[] arr,int x)
 	{
 		int n=arr.length;
 
-		//finding block size to jump 
+		//finding block size to jump (optimal block size = sqrt(n))
 		int block = (int)(Math.sqrt(n));
 
 		//step stores current step begining
